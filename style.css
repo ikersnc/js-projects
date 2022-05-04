@@ -10,7 +10,7 @@ html {
     justify-content: center;
     align-items: center;
     height: inherit;
-    background-image: linear-gradient(to right, blue, lightblue);
+    background-color: rgb(91, 8, 241);
 }
 
 #contador { 
