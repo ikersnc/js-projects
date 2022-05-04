@@ -1,0 +1,18 @@
+html {
+    height: 100vh;
+}
+
+#fondo {
+    width: inherit;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    background-image: linear-gradient(to right, blue, lightblue);
+}
+
+#contador { 
+    font-size: 900px;
+}
