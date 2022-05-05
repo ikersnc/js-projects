@@ -57,23 +57,41 @@ document.body.addEventListener('keydown', function(e) {
     let keyCode = e.key;
 
     switch(keyCode){
-        case 'a': btn[0].style.borderColor = 'white';
+        case 'a':
+                btn[0].style.boxShadow = '0 0 0 5px lightblue';
+                btn[0].style.transform = 'scale(110%, 110%)';
                 break;
-        case 's': btn[1].style.borderColor = 'white';
+        case 's':
+                btn[1].style.boxShadow = '0 0 0 5px lightblue';
+                btn[1].style.transform = 'scale(110%, 110%)';
                 break;
-        case 'd': btn[2].style.borderColor = 'white';
+        case 'd':
+                btn[2].style.boxShadow = '0 0 0 5px lightblue';
+                btn[2].style.transform = 'scale(110%, 110%)';
                 break;
-        case 'f': btn[3].style.borderColor = 'white';
+        case 'f':
+                btn[3].style.boxShadow = '0 0 0 5px lightblue';
+                btn[3].style.transform = 'scale(110%, 110%)';
                 break;
-        case 'g': btn[4].style.borderColor = 'white';
+        case 'g':
+                btn[4].style.boxShadow = '0 0 0 5px lightblue';
+                btn[4].style.transform = 'scale(110%, 110%)';
                 break;
-        case 'h': btn[5].style.borderColor = 'white';
+        case 'h':
+                btn[5].style.boxShadow = '0 0 0 5px lightblue';
+                btn[5].style.transform = 'scale(110%, 110%)';
                 break;
-        case 'j': btn[6].style.borderColor = 'white';
+        case 'j':
+                btn[6].style.boxShadow = '0 0 0 5px lightblue';
+                btn[6].style.transform = 'scale(110%, 110%)';
                 break;
-        case 'k': btn[7].style.borderColor = 'white';
+        case 'k':
+                btn[7].style.boxShadow = '0 0 0 5px lightblue';
+                btn[7].style.transform = 'scale(110%, 110%)';
                 break;
-        case 'l': btn[8].style.borderColor = 'white';
+        case 'l':
+                btn[8].style.boxShadow = '0 0 0 5px lightblue';
+                btn[8].style.transform = 'scale(110%, 110%)';
                 break;
         default: break;
     };
@@ -84,23 +102,41 @@ document.body.addEventListener('keyup', function(e) {
     let keyCode = e.key;
 
     switch(keyCode){
-        case 'a': btn[0].style.borderColor = 'black';
+        case 'a':
+                btn[0].style.boxShadow = '0 0 0 0';
+                btn[0].style.transform = 'scale(100%, 100%)';
                 break;
-        case 's': btn[1].style.borderColor = 'black';
+        case 's':
+                btn[1].style.boxShadow = '0 0 0 0';
+                btn[1].style.transform = 'scale(100%, 100%)';
                 break;
-        case 'd': btn[2].style.borderColor = 'black';
+        case 'd':
+                btn[2].style.boxShadow = '0 0 0 0';
+                btn[2].style.transform = 'scale(100%, 100%)';
                 break;
-        case 'f': btn[3].style.borderColor = 'black';
+        case 'f':
+                btn[3].style.boxShadow = '0 0 0 0';
+                btn[3].style.transform = 'scale(100%, 100%)';
                 break;
-        case 'g': btn[4].style.borderColor = 'black';
+        case 'g':
+                btn[4].style.boxShadow = '0 0 0 0';
+                btn[4].style.transform = 'scale(100%, 100%)';
                 break;
-        case 'h': btn[5].style.borderColor = 'black';
+        case 'h':
+                btn[5].style.boxShadow = '0 0 0 0';
+                btn[5].style.transform = 'scale(100%, 100%)';
                 break;
-        case 'j': btn[6].style.borderColor = 'black';
+        case 'j':
+                btn[6].style.boxShadow = '0 0 0 0';
+                btn[6].style.transform = 'scale(100%, 100%)';
                 break;
-        case 'k': btn[7].style.borderColor = 'black';
+        case 'k':
+                btn[7].style.boxShadow = '0 0 0 0';
+                btn[7].style.transform = 'scale(100%, 100%)';
                 break;
-        case 'l': btn[8].style.borderColor = 'black';
+        case 'l':
+                btn[8].style.boxShadow = '0 0 0 0';
+                btn[8].style.transform = 'scale(100%, 100%)';
                 break;
         default: break;
     };
