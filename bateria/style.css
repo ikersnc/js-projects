@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(to left, lightblue, coral);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    gap: 4rem;
+}
+
+#advise {
+    text-align: center;
+    font-size: 68px;
+    color: aliceblue;
+}
+
+#bateria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    background: linear-gradient(to right, lightblue, coral);
+    margin: auto;
+    font-size: 24px;
+    padding: 0rem 2rem 0rem 2rem;
+    border: 1px solid black;
+}
