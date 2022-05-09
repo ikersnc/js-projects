@@ -3,7 +3,7 @@ let main = document.getElementsByTagName('main');
 let tasks = document.getElementsByClassName('tareas');
 let cont = 0;
 
-let newTask = function() {
+addTask.addEventListener('click', function() {
     //ELEMENTOS
     let container = document.createElement('div');
     let tarea = document.createElement('input');
@@ -23,6 +23,4 @@ let newTask = function() {
     enterTask.value = '';
     main[0].insertBefore(container, tasks[0]);
     console.log(container, tasks[0]);
-};
-
-addTask.addEventListener('click', newTask);
+});
