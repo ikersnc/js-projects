@@ -12,6 +12,8 @@ div {
     justify-content: space-evenly;
 }
 
+input {font-size: 30px;}
+
 .addBox > * {
     margin: 0.5rem;
     width: 15vw;
@@ -29,6 +31,15 @@ div {
     justify-content: left;
 }
 
-input {font-size: 30px;}
+.tareas > label {
+    color: coral;
+    font-size: 32px;
+    margin-left: 0.5rem;
+}
+
+.tareas > input {
+    accent-color: coral;
+    width: 3vw;
+}
 
 #addTask:hover {cursor: pointer;}
