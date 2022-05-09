@@ -29,6 +29,7 @@ input {font-size: 30px;}
     display: flex;
     align-items: center;
     justify-content: left;
+    margin: 0.5rem;
 }
 
 .tareas > label {

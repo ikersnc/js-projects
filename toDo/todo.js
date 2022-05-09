@@ -1,4 +1,5 @@
 let enterTask = document.getElementById('enterTask');
+let main = document.getElementsByTagName('main');
 let cont = 0;
 
 let newTask = function() {
@@ -19,6 +20,7 @@ let newTask = function() {
     //CONT PARA PROX. ID Y REINICIAR INPUT TAREA
     cont++;
     enterTask.value = '';
+    main[0].appendChild(container);
     console.log(container);
 };
 
