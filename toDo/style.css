@@ -1,3 +1,5 @@
+:root {background-color: lightblue;}
+
 main {
     display: flex;
     flex-direction: column;
@@ -10,4 +12,23 @@ div {
     justify-content: space-evenly;
 }
 
-div > * {margin: 0.5rem;}
+.addBox > * {
+    margin: 0.5rem;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 5px;
+}
+
+.tareas {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    width: 50vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+input {font-size: 30px;}
+
+#addTask:hover {cursor: pointer;}
