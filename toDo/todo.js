@@ -1,5 +1,6 @@
 let enterTask = document.getElementById('enterTask');
 let main = document.getElementsByTagName('main');
+let tasks = document.getElementsByClassName('tareas');
 let cont = 0;
 
 let newTask = function() {
@@ -20,8 +21,8 @@ let newTask = function() {
     //CONT PARA PROX. ID Y REINICIAR INPUT TAREA
     cont++;
     enterTask.value = '';
-    main[0].appendChild(container);
-    console.log(container);
+    main[0].insertBefore(container, tasks[0]);
+    console.log(container, tasks[0]);
 };
 
 addTask.addEventListener('click', newTask);
