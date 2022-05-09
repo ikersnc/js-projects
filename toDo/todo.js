@@ -8,13 +8,17 @@ let newTask = function() {
     let texto = document.createElement('label');
     //PROPIEDADES
     container.classList.add('tareas');
-    tarea.type = 'checkbox';
-    tarea.id = 'tarea' + cont;
-    texto.htmlFor = tarea.id;
-    texto.innerText = enterTask.value;
     container.appendChild(tarea);
     container.appendChild(texto);
+
+    tarea.type = 'checkbox';
+    tarea.id = 'tarea' + cont;
+
+    texto.htmlFor = tarea.id;
+    texto.innerText = enterTask.value;
+    //CONT PARA PROX. ID Y REINICIAR INPUT TAREA
     cont++;
+    enterTask.value = '';
     console.log(container);
 };
 
