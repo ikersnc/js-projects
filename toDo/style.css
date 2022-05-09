@@ -44,3 +44,5 @@ input {font-size: 30px;}
 }
 
 #addTask:hover {cursor: pointer;}
+
+#error {color: red;}
