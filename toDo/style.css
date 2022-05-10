@@ -44,6 +44,14 @@ input {font-size: 30px;}
     width: 3vw;
 }
 
+#noTasks {
+    margin-top: 20rem;
+    color: white;
+    font-size: 96px;
+}
+
+.hidden {display: none;}
+
 #addTask:hover {cursor: pointer;}
 
 #error {color: red;}
