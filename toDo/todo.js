@@ -44,7 +44,7 @@ addTask.addEventListener('click', add);
 enterTask.addEventListener('keyup', function(e) {
     if(e.key === 'Enter') add();
 });
-
+//NOT WORKING
 for(let i = 0; i < deleteTask.length; i++) {
     deleteTask[i].addEventListener('click', function() {
         console.log('funciona');
