@@ -9,7 +9,8 @@ function add() {
         error.innerText = 'Enter task';
     else {
         error.innerText = '';
-        noTasks.classList.toggle('hidden');
+        
+        if(!noTasks.classList.contains('hidden')) noTasks.classList.add('hidden');
         //ELEMENTS
         let container = document.createElement('div');
         let tarea = document.createElement('input');
