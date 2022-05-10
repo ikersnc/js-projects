@@ -1,6 +1,6 @@
 let main = document.getElementsByTagName('main');
 let tasks = document.getElementsByClassName('tareas');
-let deleteTask = [];
+let taskArray = [];
 let cont = 0;
 
 function add() {
@@ -9,7 +9,7 @@ function add() {
         error.innerText = 'Enter task';
     else {
         error.innerText = '';
-
+        let deleteTask = [];
         if(!noTasks.classList.contains('hidden')) noTasks.classList.add('hidden');
         //ELEMENTS
         let container = document.createElement('div');
@@ -27,11 +27,11 @@ function add() {
 
         texto.htmlFor = tarea.id;
         texto.innerText = enterTask.value;
-
+        
         icon.id = 'icon' + cont;
         icon.classList.add('fa-solid', 'fa-trash');
-        deleteTask.push(icon.id);
-        console.log(deleteTask);
+        taskArray.push(icon.id);
+        console.log(taskArray);
         //CONT FOR PROX. ID & REBOOT INPUT
         cont++;
         enterTask.value = '';
@@ -44,9 +44,15 @@ addTask.addEventListener('click', add);
 enterTask.addEventListener('keyup', function(e) {
     if(e.key === 'Enter') add();
 });
-//NOT WORKING
-for(let i = 0; i < deleteTask.length; i++) {
-    deleteTask[i].addEventListener('click', function() {
-        console.log('funciona');
-    });
-}
+
+// let deleteTask = setInterval(function() {
+//     if(taskArray.length > 0) {
+//         console.log(taskArray);
+//         // for (let i = 0; i < taskArray.length; i++) {
+//         //     taskArray[i].addEventListener('click', function() {
+//         //         taskArray[i].remove();
+//         //     });
+//         // }
+//         clearInterval(deleteTask);
+//     }
+// }, 500);

@@ -6,10 +6,11 @@ main {
     align-items: center;
 }
 
-div {
+.addBox {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 input {font-size: 30px;}
