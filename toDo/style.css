@@ -36,6 +36,7 @@ input {font-size: 30px;}
     color: coral;
     font-size: 32px;
     margin-left: 0.5rem;
+    min-width: 85%;
 }
 
 .tareas > input {
@@ -46,3 +47,6 @@ input {font-size: 30px;}
 #addTask:hover {cursor: pointer;}
 
 #error {color: red;}
+
+.fa-solid {color: coral;}
+.fa-solid:hover {cursor: pointer;}
