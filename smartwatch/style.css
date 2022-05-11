@@ -1,0 +1,40 @@
+/*
+Color Code:
+Blue - #565681
+Purple - #8a5362
+Black - #23211f
+Red - #ca3d22
+Pink - #e9c7be
+Font Family:
+Montserrat
+Source Sans Pro 
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+ :root {
+     --blue: #565681;
+     --purple: #8A5362;
+     --black: #23211F;
+     --red: #CA3D22;
+     --pink: #E9C7BE;
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ header {
+     display: flex;
+     justify-content: center;
+     background-color: var(--black);
+     color: var(--pink);
+ }
+
+ main {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     margin-top: 1rem;
+ }
+
+ img {
+     width: 450px;
+     height: auto;
+ }
