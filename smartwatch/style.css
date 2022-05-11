@@ -34,7 +34,28 @@ Source Sans Pro
      margin-top: 1rem;
  }
 
- img {
+ #img {
      width: 450px;
      height: auto;
  }
+
+ #palette {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+ }
+
+ .colors {
+     width: 50px;
+     height: 25px;
+     margin: 1rem 0.5rem 1rem 0rem;
+     border-radius: 5px;
+ }
+
+ .colors:hover {cursor: pointer;}
+
+ #blue {background-color: var(--blue);}
+ #purple {background-color: var(--purple);}
+ #black {background-color: var(--black);}
+ #red {background-color: var(--red);}
+ #pink {background-color: var(--pink);}
