@@ -41,9 +41,7 @@ function add() {
 //ADD CLICKING BUTTON
 addTask.addEventListener('click', add);
 //ADD PRESSING ENTER
-enterTask.addEventListener('keyup', e => {
-    if(e.key === 'Enter') add();
-});
+enterTask.addEventListener('keyup', e => {if(e.key === 'Enter') add();});
 
 // let deleteTask = setInterval(function() {
 //     if(taskArray.length > 0) {
