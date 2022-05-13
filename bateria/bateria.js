@@ -15,7 +15,7 @@ let tink = new Audio('audio/tink.wav');
 //
 
 //ANIMACIÓN Y SONIDO AL PULSAR LA TECLA
-document.body.addEventListener('keydown', function(e) {
+document.body.addEventListener('keydown', e => {
     let keyCode = e.key;
 
     switch(keyCode){
@@ -80,7 +80,7 @@ document.body.addEventListener('keydown', function(e) {
 //
 
 //ANIMACIÓN Y RECARGA EL SONIDO AL SOLTAR LA TECLA
-document.body.addEventListener('keyup', function(e) {
+document.body.addEventListener('keyup', e => {
     let keyCode = e.key;
 
     switch(keyCode){
