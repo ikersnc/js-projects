@@ -2,7 +2,7 @@ let contador = document.getElementById('contador');
 let fondo = document.getElementById('fondo');
 let descenso = contador.innerHTML;
 
-let intervalo = setInterval(function() {
+let intervalo = setInterval(() => {
 
     descenso = descenso > 0 ? descenso - 1 : 0;
 
