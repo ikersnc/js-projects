@@ -41,7 +41,7 @@ function add() {
 //ADD CLICKING BUTTON
 addTask.addEventListener('click', add);
 //ADD PRESSING ENTER
-enterTask.addEventListener('keyup', function(e) {
+enterTask.addEventListener('keyup', e => {
     if(e.key === 'Enter') add();
 });
 
