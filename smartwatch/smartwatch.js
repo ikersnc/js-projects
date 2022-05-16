@@ -1,5 +1,7 @@
-blue.addEventListener('click', () => console.log('funciona'));
-red.addEventListener('click', () => console.log('funciona'));
-black.addEventListener('click', () => console.log('funciona'));
-purple.addEventListener('click', () => console.log('funciona'));
-pink.addEventListener('click', () => console.log('funciona'));
+let img = document.getElementById('img');
+
+blue.addEventListener('click', () => img.src = 'img/blue.png');
+red.addEventListener('click', () => img.src = 'img/red.png');
+black.addEventListener('click', () => img.src = 'img/black.png');
+purple.addEventListener('click', () => img.src = 'img/purple.png');
+pink.addEventListener('click', () => img.src = 'img/pink.png');
