@@ -35,16 +35,17 @@ Source Sans Pro
  }
 
  #displayTime {
-     width: 450px;
-     height: auto;
-     text-align: center;
+    background-image: url('img/black.png') !important;
+    width: 600px !important;
+    height: 250px;
+    text-align: center;
  }
 
- #img {
+ /* #img {
      width: 450px;
      height: auto;
      position: absolute;
- }
+ } */
 
  #details > h2 {margin-bottom: 0.5rem;}
 
