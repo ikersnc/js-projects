@@ -34,9 +34,16 @@ Source Sans Pro
      margin-top: 1rem;
  }
 
+ #displayTime {
+     width: 450px;
+     height: auto;
+     text-align: center;
+ }
+
  #img {
      width: 450px;
      height: auto;
+     position: absolute;
  }
 
  #details > h2 {margin-bottom: 0.5rem;}
