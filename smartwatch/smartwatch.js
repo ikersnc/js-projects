@@ -4,8 +4,8 @@ setInterval(() => {
     displayTime.innerText = localTime;
 }, 1000);
 
-blue.addEventListener('click', () => img.src = 'img/blue.png');
-red.addEventListener('click', () => img.src = 'img/red.png');
-black.addEventListener('click', () => img.src = 'img/black.png');
-purple.addEventListener('click', () => img.src = 'img/purple.png');
-pink.addEventListener('click', () => img.src = 'img/pink.png');
+blue.addEventListener('click', () => displayTime.style.backgroundImage = "url('img/blue.png')");
+red.addEventListener('click', () => displayTime.style.backgroundImage = "url('img/red.png')");
+black.addEventListener('click', () => displayTime.style.backgroundImage = "url('img/black.png')");
+purple.addEventListener('click', () => displayTime.style.backgroundImage = "url('img/purple.png')");
+pink.addEventListener('click', () => displayTime.style.backgroundImage = "url('img/pink.png')");

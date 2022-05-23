@@ -38,11 +38,10 @@ Source Sans Pro
 
  #displayTime {
     background: url('./img/black.png') no-repeat left/450px;
-    background-attachment: fixed;
-    width: 40vw;
+    width: 450px;
     height: auto;
     text-align: center;
-    min-height: 100vh;
+    min-height: 50vh;
  }
 
  /* #img {
