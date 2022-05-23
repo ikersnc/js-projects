@@ -20,6 +20,8 @@ Source Sans Pro
      font-family: 'Montserrat', sans-serif;
  }
 
+ body {height: 100vh;}
+
  header {
      display: flex;
      justify-content: center;
@@ -35,9 +37,11 @@ Source Sans Pro
  }
 
  #displayTime {
-    background-image: url('img/black.png') !important;
-    width: 600px !important;
-    height: 250px;
+    background-image: url('./img/black.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 40vw;
+    height: auto;
     text-align: center;
  }
 
@@ -48,6 +52,7 @@ Source Sans Pro
  } */
 
  #details > h2 {margin-bottom: 0.5rem;}
+ #details {width: 60vw;}
 
  #palette {
      margin-top: 0.5rem;
