@@ -37,12 +37,12 @@ Source Sans Pro
  }
 
  #displayTime {
-    background-image: url('./img/black.png');
-    background-repeat: no-repeat;
-    background-position: top left;
+    background: url('./img/black.png') no-repeat left/450px;
+    background-attachment: fixed;
     width: 40vw;
     height: auto;
     text-align: center;
+    min-height: 100vh;
  }
 
  /* #img {
