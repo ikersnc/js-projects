@@ -36,13 +36,21 @@ Source Sans Pro
      margin-top: 1rem;
  }
 
- #displayTime {
+ #displayWatch {
     background: url('./img/black.png') no-repeat left/450px;
     width: 450px;
     height: auto;
     text-align: center;
     min-height: 50vh;
+    position: relative;
+    z-index: 0;
  }
+
+ #displayTime {
+    position: absolute;
+    margin-top: 200px;
+    z-index: 3;
+}
 
  /* #img {
      width: 450px;
