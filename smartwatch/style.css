@@ -42,21 +42,15 @@ Source Sans Pro
     height: auto;
     text-align: center;
     min-height: 50vh;
-    position: relative;
-    z-index: 0;
  }
 
  #displayTime {
+    color: white;
+    font-size: 1.5rem;
     position: absolute;
-    margin-top: 200px;
-    z-index: 3;
+    margin-left: 180px;
+    z-index: 1;
 }
-
- /* #img {
-     width: 450px;
-     height: auto;
-     position: absolute;
- } */
 
  #details > h2 {margin-bottom: 0.5rem;}
  #details {width: 60vw;}
