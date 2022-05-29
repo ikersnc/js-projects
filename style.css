@@ -5,4 +5,4 @@ main {
     align-content: center;
 }
 
-li {list-style: none;}
+li {list-style: none; text-decoration: none; color: aquamarine}
