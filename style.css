@@ -2,6 +2,7 @@ main {
     background-image: linear-gradient('to bottom', red, blue);
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 li {list-style: none;}
