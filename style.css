@@ -9,6 +9,7 @@ main {
 ul {
     display: flex;
     align-content: center;
+    justify-content: center;
 }
 
 li {list-style: none;}
