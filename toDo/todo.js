@@ -1,6 +1,5 @@
-let main = document.getElementsByTagName('main');
+let main = document.querySelector('main');
 let tasks = document.getElementsByClassName('tareas');
-let taskArray = [];
 let cont = 0;
 
 function add() {
@@ -15,12 +14,12 @@ function add() {
         let container = document.createElement('div');
         let tarea = document.createElement('input');
         let texto = document.createElement('label');
-        let icon = document.createElement('li');
+        // let icon = document.createElement('li');
         //PROPERTIES
         container.classList.add('tareas');
         container.appendChild(tarea);
         container.appendChild(texto);
-        container.appendChild(icon);
+        container.appendChild(deleteBtn());
 
         tarea.type = 'checkbox';
         tarea.id = 'tarea' + cont;
@@ -28,29 +27,27 @@ function add() {
         texto.htmlFor = tarea.id;
         texto.innerText = enterTask.value;
         
-        icon.id = 'icon' + cont;
-        icon.classList.add('fa-solid', 'fa-trash');
-        taskArray.push(icon.id);
-        console.log(taskArray);
         //CONT FOR PROX. ID & REBOOT INPUT
         cont++;
         enterTask.value = '';
-        main[0].insertBefore(container, tasks[0]);
+        main.insertBefore(container, tasks[0]);
     }
+};
+
+function deleteBtn() {
+    let icon = document.createElement('li');
+    icon.id = 'icon' + cont;
+    icon.classList.add('fa-solid', 'fa-trash');
+
+    icon.addEventListener('click', e => {
+        let eliminar = e.target.parentElement;
+        console.log(eliminar);
+        main.removeChild(eliminar);
+    });
+
+    return icon;
 };
 //ADD CLICKING BUTTON
 addTask.addEventListener('click', add);
 //ADD PRESSING ENTER
 enterTask.addEventListener('keyup', e => {if(e.key === 'Enter') add();});
-
-// let deleteTask = setInterval(function() {
-//     if(taskArray.length > 0) {
-//         console.log(taskArray);
-//         // for (let i = 0; i < taskArray.length; i++) {
-//         //     taskArray[i].addEventListener('click', function() {
-//         //         taskArray[i].remove();
-//         //     });
-//         // }
-//         clearInterval(deleteTask);
-//     }
-// }, 500);
