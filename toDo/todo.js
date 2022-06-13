@@ -14,7 +14,7 @@ function add() {
         let container = document.createElement('div');
         let tarea = document.createElement('input');
         let texto = document.createElement('label');
-        // let icon = document.createElement('li');
+        
         //PROPERTIES
         container.classList.add('tareas');
         container.appendChild(tarea);
@@ -35,14 +35,15 @@ function add() {
 };
 
 function deleteBtn() {
+    //CREATE BUTTON
     let icon = document.createElement('li');
     icon.id = 'icon' + cont;
     icon.classList.add('fa-solid', 'fa-trash');
 
+    //WAITS FOR THE CLICK AND DELETES THE TASK
     icon.addEventListener('click', e => {
-        let eliminar = e.target.parentElement;
-        console.log(eliminar);
-        main.removeChild(eliminar);
+        let toDelete = e.target.parentElement;
+        main.removeChild(toDelete);
     });
 
     return icon;
